@@ -4,14 +4,16 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-	public float speed;
 	public Rigidbody rb;
+	public float speed;
 	private int score;
+	public int health;
 	// Start is called before the first frame update
 	void Start()
 	{
 		speed = 800f;
 		score = 0;
+		health = 5;
 	}
 
 	// Update is called once per frame
@@ -41,6 +43,12 @@ public class PlayerController : MonoBehaviour
 			score++;
 			Debug.Log($"Score:{score}");
 			other.gameObject.SetActive(false);
+		}
+		else if (other.tag == "Trap")
+		{
+            health --;
+			Debug.Log($"Health:{health}");
+            
 		}
 	}
 }
