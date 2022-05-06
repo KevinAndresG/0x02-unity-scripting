@@ -5649,38 +5649,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coin
       objectReference: {fileID: 0}
-    - target: {fileID: 125463363433956543, guid: eca16db3274fa444a964d520f2a5c68e,
+    - target: {fileID: 1582572129918398181, guid: eca16db3274fa444a964d520f2a5c68e,
         type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
       propertyPath: m_Height
       value: 1.05
       objectReference: {fileID: 0}
-    - target: {fileID: 125463363433956543, guid: eca16db3274fa444a964d520f2a5c68e,
-        type: 3}
+    - target: {fileID: 0}
       propertyPath: m_Radius
       value: 0.07
       objectReference: {fileID: 0}
-    - target: {fileID: 125463363433956543, guid: eca16db3274fa444a964d520f2a5c68e,
-        type: 3}
+    - target: {fileID: 0}
       propertyPath: m_Center.x
       value: -4.317393e-16
       objectReference: {fileID: 0}
-    - target: {fileID: 125463363433956543, guid: eca16db3274fa444a964d520f2a5c68e,
-        type: 3}
+    - target: {fileID: 0}
       propertyPath: m_Center.y
       value: 0.1
       objectReference: {fileID: 0}
-    - target: {fileID: 125463363433956543, guid: eca16db3274fa444a964d520f2a5c68e,
-        type: 3}
+    - target: {fileID: 0}
       propertyPath: m_Center.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 125463363433956543, guid: eca16db3274fa444a964d520f2a5c68e,
-        type: 3}
+    - target: {fileID: 0}
       propertyPath: m_Direction
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 125463363433956543, guid: eca16db3274fa444a964d520f2a5c68e,
-        type: 3}
+    - target: {fileID: 0}
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
