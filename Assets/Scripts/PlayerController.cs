@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class PlayerController : MonoBehaviour
 {
 	public Rigidbody rb;
@@ -46,9 +46,23 @@ public class PlayerController : MonoBehaviour
 		}
 		else if (other.tag == "Trap")
 		{
-            health --;
+			health--;
 			Debug.Log($"Health:{health}");
-            
+
+		}
+		if (health == 0)
+		{
+			Debug.Log("Game Over!");
+			SceneManager.LoadScene("maze");
+			Start();
+		}
+		if (other.tag == "Goal" && score < 30)
+		{
+			Debug.Log($"Coins Left {30 - score}");
+		}
+		else if (other.tag == "Goal" && score == 30)
+		{
+			Debug.Log("You win!");
 		}
 	}
 }
